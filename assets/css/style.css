@@ -1,0 +1,240 @@
+/* latin */
+@font-face {
+  font-family: 'Asap';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Asap'), local('Asap-Regular'), url(fonts/oiVlPAjaPL0EznW3E5Z2DQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+	body{
+    	background: url(../img/bg.png) top left;
+    	margin: 0px;
+    	padding: 0px;
+    	font-size: 13px;
+		font-family: 'Asap';
+
+    }
+    a:hover{
+        text-decoration: none;
+    }
+
+    h1,h2,h3{
+    	margin: 0px;
+    	padding: 0px;
+    	margin-bottom: 0.5em;
+    }
+    hr{
+    	/*margin: 0px;
+    	margin-bottom: 0.5em;*/
+    }
+    label{
+        font-weight: normal;
+    }
+    table.data{
+        border: 1px solid #ddd;
+    }
+
+    table{
+        /*border: 1px solid #ddd;*/
+    }
+    .head-line{
+       float: left;
+       width: 20%;
+       border-top: 3px solid;
+    }
+    .line-red{
+        border-color: #E26A6A;
+    }
+    .line-green{
+        border-color: #179d81;
+    }
+    .line-blue{
+        border-color: #437cae;
+    }
+    .line-yellow{
+        border-color: #cfa500;
+    }
+    .line-purple{
+        border-color: #746198;
+    }
+
+    .login-container{
+    	position: relative;
+    	top: 150px;
+    	width: 30%;
+    	background: #fff;
+    	border-radius: 2px;
+    	margin: auto;
+    	box-shadow: 0px 1px 2px #888888;
+        overflow: hidden;
+    }
+
+    .main-container{
+        position: relative;
+        top: 50px;
+        width: 80%;
+        background: #fff;
+        border-radius: 2px;
+        margin: auto;
+        box-shadow: 0px 1px 2px #888888;
+        overflow: hidden;
+        margin-bottom: 50px;
+    }
+
+    footer{
+        border-top: 1px solid #eee;
+        margin: 0em 1.5em 1em 1.5em;
+        padding-top: 1em;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .inner-container{
+        padding: 2em 1.5em 1.5em 1.5em;
+    }
+    .logo-container{
+    	margin: auto;
+    	text-align: center;
+    	margin-bottom: 0em;
+        line-height: 0.5em;
+        font-size: 3em;
+    }
+    h2.logo-container small{
+        font-size: 0.43em;
+    }
+
+    .box-cst{
+        border-radius: 1px;
+        box-shadow: none;
+    }
+
+    .box-cst a{
+        border-radius: 1px;
+    }
+
+    .list-group-item:first-child{
+        border-radius: 1px;
+    }
+    .list-group-item:last-child{
+        border-radius: 1px;
+    }
+
+    input.cst, select.cst, textarea.cst{
+    	border-radius: 1px;
+    	border: 1px solid #dfdfdf;
+    	box-shadow: none;
+    	font-family: inherit;
+    }
+    textarea{
+        resize:none;
+    }
+
+    button{
+    	border: none;
+    	color: #fff;
+    	padding: 0.5em 1.5em;
+    	border-radius: 1px;
+    	margin-left: 0.5em;
+    }
+
+    table td{
+        padding: 0.3em 0.2em 0.3em 0.2em;
+    }
+    table th{
+        padding: 0.5em;
+        text-align: center;
+    }
+
+    .red    {background: #fa5a5a;}
+	.yellow {background: #f0d264;}
+	.green  {background: #82c8a0;}
+	.cyan   {background: #7fccde;}
+	.blue   {background: #6698cb;}
+	.purple {background: #cb99c5;}
+
+    #shw_daftar{
+        display: none;
+    }
+    #hd_daftar{
+        display: none;
+    }
+
+    .xxx{
+        display: none;
+    }
+
+@media screen and (max-width: 600px) {
+    .xxx{
+        display: inline;
+    }
+    #shw_daftar{
+        display: inline;
+    }
+
+    .dftr{
+        display: none;
+    }
+	.login-container{
+		width: 90%;
+		top: 20px;
+	}
+	button{
+		width: 100%;
+		margin-top: 0.5em;
+	}
+    .menu{
+        display: inline;
+        text-align: left;
+        width: 100%;
+    }
+
+    .main-container{
+        position: relative;
+        top: 10px;
+        width: 95%;
+        background: #fff;
+        border-radius: 2px;
+        margin: auto;
+        box-shadow: 0px 1px 2px #888888;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+
+    /* Force table to not be like tables anymore */
+        table.resp {
+          border: 0;
+          width: 100%;
+          border: none;
+        }
+
+        table.resp thead {
+          display: none;
+        }
+
+        table.resp tr {
+          margin-bottom: 10px;
+          display: block;
+          border: 1px solid #ddd;
+        }
+
+        table.resp td {
+          display: block;
+          text-align: right;
+          font-size: 13px;
+          /*border-bottom: 1px dotted #ccc;*/
+        }
+
+        table.resp td:last-child {
+          border-bottom: 0;
+        }
+
+        table.resp td:before {
+          content: attr(data-label);
+          float: left;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+}
