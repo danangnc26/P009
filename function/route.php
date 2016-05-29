@@ -211,7 +211,7 @@ function route($page)
 }
 
 define("index", "index.php");
-define("base_url", server_name()."/p6-digimax/");
+define("base_url", server_name()."/digimax/");
 define("app_base", index."?page=");
 define("func_url", base_url.'function/func.php?');
 
