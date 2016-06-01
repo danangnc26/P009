@@ -98,7 +98,7 @@
 					<tbody>
 						<?php
 						if($data2 == null){
-							echo "<tr><td align='center' colspan='6'> -- Data tidak ditemukan -- </td></tr>";
+							echo "<tr><td align='center' colspan='5'> -- Data tidak ditemukan -- </td></tr>";
 						}else{
 						foreach ($data2 as $key => $value) {
 							if($item->getItemPesanAdmin($value['id_pesan']) == null){
@@ -122,7 +122,7 @@
 					</tbody>
 					<tfoot>
 						<tr>
-							<th colspan="5">Total</th>
+							<th colspan="4">Total</th>
 							<td>
 								<?php echo (isset($sub_total)) ? Lib::ind(array_sum($sub_total)) : '' ?>
 							</td>
