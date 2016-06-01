@@ -4,6 +4,7 @@ ob_start();
 error_reporting(E_ALL ^ E_DEPRECATED);
 include_once dirname(__FILE__).DIRECTORY_SEPARATOR.'bootstrap.php';
 include_once dirname(__FILE__).DIRECTORY_SEPARATOR.'lib.php';
+include_once dirname(__FILE__).DIRECTORY_SEPARATOR.'../config/Config.php';
 
 
 function route($page)
@@ -222,7 +223,7 @@ function route($page)
 }
 
 define("index", "index.php");
-define("base_url", server_name()."/digimax/");
+define("base_url", server_name()."/".Config::getConfig('rootdir')."/");
 define("app_base", index."?page=");
 define("func_url", base_url.'function/func.php?');
 
