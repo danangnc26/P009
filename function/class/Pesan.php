@@ -20,6 +20,11 @@ class Pesan extends Core{
 		return $this->findBy($this->primaryKey, $id);
 	}
 
+	public function getLaporan($blth)
+	{
+		return $this->findAll("where tanggal like '".$blth."%' and status=4 order by tanggal asc");
+	}
+
 	public function getListPesanByUser()
 	{
 		return $this->findAll("where id_user='".$_SESSION['id_user']."' and status!=0 order by tanggal desc");

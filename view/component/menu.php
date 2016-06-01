@@ -24,6 +24,14 @@ Lib::isLogged();
 						      	<li><a class="nv" href="<?php echo app_base.'home' ?>">Home</a></li>
 						      	<?php
 						      	if(!empty($_SESSION)){
+						      	if($_SESSION['level_user'] == 'admin'){
+						      	?>
+						      	<li><a class="nv" href="<?php echo app_base.'show_welcome' ?>">Panel Admin</a></li>
+						      	<?php
+						      	}}
+						      	?>
+						      	<?php
+						      	if(!empty($_SESSION)){
 						      	if($_SESSION['level_user'] == 'customer'){
 						      	?>
 						        <li><a class="nv" href="<?php echo app_base.'create_order' ?>">Buat Pesanan</a></li>

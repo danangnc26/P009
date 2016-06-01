@@ -144,6 +144,17 @@ function route($page)
 				$user->deleteCustomer($_GET['id_user']);
 			break;
 
+		case 'index_laporan':
+				if(isset($_GET['bulan']) && isset($_GET['tahun'])){
+					$dt = $_GET['tahun'].'-'.$_GET['bulan'];
+				}else{
+					$dt = date('Y-m');
+				}
+				// $data = $item->getItemPesanAdmin($_GET['id_pesan']);
+				$data2 = $pesan->getLaporan($dt);
+				include "view/admin/laporan/index.php";
+			break;
+
 		// // // // // // // // ADMIN // // // // // // // // 
 
 		case 'index_customer':
@@ -205,7 +216,7 @@ function route($page)
 		
 		case 'main' :
 				default : 
-				// header("location:index.php");
+				Lib::redirect('home');
 			break;
 	}
 }
