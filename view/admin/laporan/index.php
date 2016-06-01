@@ -88,8 +88,7 @@
 				<table class="data" border="1" style="border-collapse:collapse; width:100%">
 					<thead>
 						<tr>
-							<th width="40">No.</th>
-							<th width="150">Tanggal</th>
+							<th width="100">Tanggal</th>
 							<th>Barang</th>
 							<th>Jumlah</th>
 							<th>Harga</th>
@@ -107,7 +106,6 @@
 							foreach ($item->getItemPesanAdmin($value['id_pesan']) as $key => $value2) {
 						?>
 						<tr>
-							<td><?php echo $key+1 ?></td>
 							<td><?php echo Lib::dateInd($value['tanggal'], true) ?></td>
 							<td><?php echo Lib::namaKategori($value2['id_kategori_produk']).' - '.Lib::namaJenis($value2['id_jenis_cetak']).' - '.Lib::namaBahan($value2['id_bahan']) ?>
 								 <?php echo (Lib::namaSatuan($value2['id_kategori_produk']) != 'rim') ? ' - Ukuran '.$value2['u_panjang'].' x '.$value2['u_lebar'] : ''  ?>
